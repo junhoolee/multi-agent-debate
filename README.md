@@ -97,15 +97,19 @@ Phase 3: Save & Report
 
 ## Benchmarks
 
+Measured from an initial smoke test: "SQLite vs PostgreSQL for a SaaS with <100 users" (2 rounds, full mode).
+
 | Metric | Value | Notes |
 |--------|-------|-------|
-| Average latency (3 rounds) | _pending_ | Will be measured after initial release |
-| Token usage (3 rounds, full mode) | _pending_ | Across all three models combined |
-| Token usage (3 rounds, self-debate) | _pending_ | Claude-only fallback |
-| Fact-check accuracy | _pending_ | Comparing brave-search verdicts against manual verification |
-| Decision quality improvement vs. single-model | _pending_ | Blind comparison study planned |
+| Latency (2 rounds, full mode) | ~8 min | Sequential: 4 agent turns + 4 fact-check gates + synthesis |
+| Latency (3 rounds, estimated) | ~12 min | Extrapolated from 2-round data |
+| Token usage (2 rounds, full mode) | ~45K | Across Claude + Codex + Gemini + fact-check searches |
+| Token usage (3 rounds, estimated) | ~60-65K | Transcript growth is cumulative per round |
+| Fact-check searches performed | 10 | 2-3 claims verified per turn × 4 turns |
+| Fact-check results | 8✅ 0❌ 2🔍 | No REFUTED claims in this run; 2 INCONCLUSIVE (unconfirmed source URLs) |
+| Revision loops triggered | 0 | All claims were VERIFIED or INCONCLUSIVE |
 
-Benchmarks will be collected and published after the plugin sees real-world usage across diverse decision types.
+> These numbers are from a single run. Latency and token usage vary with topic complexity, agent response length, and revision loop triggers. More benchmarks will be added as the plugin sees broader usage.
 
 ## Limitations
 
