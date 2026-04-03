@@ -2,6 +2,13 @@
 
 Structured multi-model debate for technical decisions: Claude (Moderator) x Codex (Pragmatist) x Gemini (Explorer) with 2-layer web-search fact-checking.
 
+## When This Plugin Shines
+
+- **No clear right answer** — You're deep in a complex codebase, weighing migration strategies, architectural trade-offs, or technology choices, and the "obvious" answer keeps shifting the more you think about it. Three models with genuinely different reasoning patterns will surface blind spots a single model misses.
+- **Outsource the back-and-forth** — You need a rigorous pros-and-cons analysis grounded in your codebase context, but don't want to spend an hour arguing with yourself. Let Codex (the pragmatist) and Gemini (the explorer) do the arguing while Claude moderates and fact-checks.
+- **High-stakes decisions that deserve scrutiny** — Choosing a database, adopting a framework, rewriting a module, splitting a monolith. Decisions where "we'll just refactor later" never actually happens. A 10-minute debate now saves weeks of regret.
+- **When you feel too certain** — The moment you think "obviously we should do X" is exactly when confirmation bias is strongest. If you can't articulate a strong counter-argument, this plugin will find one for you.
+
 ## Key Features
 
 - **Real multi-model debate** -- not persona splitting within a single model. Claude moderates while Codex CLI and Gemini CLI provide genuinely independent perspectives with different training data and reasoning patterns.
