@@ -1,0 +1,15 @@
+{
+  "name": "multi-agent-debate",
+  "version": "0.1.0",
+  "description": "Structured multi-model debate for technical decisions. Claude (Moderator) x Codex (Pragmatist) x Gemini (Explorer) with 2-layer web-search fact-checking.",
+  "author": {
+    "name": "junhoo"
+  },
+  "license": "MIT",
+  "keywords": [
+    "decision-making",
+    "multi-agent",
+    "debate",
+    "fact-check"
+  ]
+}
