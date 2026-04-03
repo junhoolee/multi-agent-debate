@@ -1,0 +1,18 @@
+{
+  "name": "junhoolee-multi-agent-debate",
+  "description": "Self-hosted marketplace for the multi-agent-debate Claude Code plugin",
+  "owner": {
+    "name": "junhoolee"
+  },
+  "plugins": [
+    {
+      "name": "multi-agent-debate",
+      "description": "Structured multi-model debate for technical decisions. Claude (Moderator) x Codex (Pragmatist) x Gemini (Explorer) with 2-layer web-search fact-checking.",
+      "version": "0.1.0",
+      "source": "./",
+      "author": {
+        "name": "junhoolee"
+      }
+    }
+  ]
+}

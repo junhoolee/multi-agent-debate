@@ -24,16 +24,16 @@ Without Codex CLI or Gemini CLI installed, the skill runs in **degraded mode** w
 
 ```bash
 # Add the marketplace (one-time)
-claude plugin marketplace add github:junhoo/multi-agent-debate
+claude plugin marketplace add github:junhoolee/multi-agent-debate
 
 # Install the plugin
-claude plugin install multi-agent-debate@junhoo-multi-agent-debate
+claude plugin install multi-agent-debate@junhoolee-multi-agent-debate
 ```
 
 Or install directly from GitHub:
 
 ```bash
-claude plugin install github:junhoo/multi-agent-debate
+claude plugin install github:junhoolee/multi-agent-debate
 ```
 
 ## Privacy Notice
