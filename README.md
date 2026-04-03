@@ -105,9 +105,8 @@ Measured from an initial smoke test: "SQLite vs PostgreSQL for a SaaS with <100 
 | Latency (3 rounds, estimated) | ~12 min | Extrapolated from 2-round data |
 | Token usage (2 rounds, full mode) | ~45K | Across Claude + Codex + Gemini + fact-check searches |
 | Token usage (3 rounds, estimated) | ~60-65K | Transcript growth is cumulative per round |
-| Fact-check searches performed | 10 | 2-3 claims verified per turn × 4 turns |
-| Fact-check results | 8✅ 0❌ 2🔍 | No REFUTED claims in this run; 2 INCONCLUSIVE (unconfirmed source URLs) |
-| Revision loops triggered | 0 | All claims were VERIFIED or INCONCLUSIVE |
+| Fact-check searches per debate | 10 | 2-3 claims verified per turn × 4 turns |
+| Decision quality vs. single-model | _pending_ | Blind A/B comparison planned: same topic debated by multi-model vs Claude-only, human judges pick the better recommendation |
 
 > These numbers are from a single run. Latency and token usage vary with topic complexity, agent response length, and revision loop triggers. More benchmarks will be added as the plugin sees broader usage.
 
