@@ -30,18 +30,14 @@ Without Codex CLI or Gemini CLI installed, the skill runs in **degraded mode** w
 ## Installation
 
 ```bash
-# Add the marketplace (one-time)
-claude plugin marketplace add github:junhoolee/multi-agent-debate
+# Step 1: Add the marketplace (one-time)
+claude plugin marketplace add junhoolee/multi-agent-debate
 
-# Install the plugin
+# Step 2: Install the plugin
 claude plugin install multi-agent-debate@junhoolee-multi-agent-debate
 ```
 
-Or install directly from GitHub:
-
-```bash
-claude plugin install github:junhoolee/multi-agent-debate
-```
+After installation, restart Claude Code to load the plugin. Then use `/multi-agent-debate` to start a debate.
 
 ## Privacy Notice
 
